@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
-<header>
-    <nav>
-        
+<header><!-- Header for landing page containing About, Contact, Projects -->
+    <nav id="navbar">
+        <ul>
+            <li><a class="nav-link" href="#welcome">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
     </nav>
 </header>
-
+<!-- Welcome Section-->
+<section id="welcome">
+    <h1>Hey I am Ezekiel</h1>
+    <p>a Front-End Developer</p>
+</section>
+<!--Projects Section-->
+<section id="projects">
+    <h2>These are some of my projects</h2>
+    <hr>
+    <div class="project-tile"></div>
+</section>
+<!--Contact Section-->
 <body>
-    <form>
+    <form><!--Contact Form-->
         
     </form>
 </body>
-
+<!--Footer section-->
 <footer>
-
+    <section id="contact">
+        <div class="profile-header"> Let's work together...</div>
+        <div class="socials">
+            <a id="github-link" href="https://github.com/ecrai30" target="_blank" class="contact-details">GitHub</a>
+            <a id="linkedIn-link" href="https://www.linkedin.com/in/ezekiel-craig/" target="_blank" class="contact-details">LinkedIn</a>
+        </div>
+    </section>
 </footer>
 
 </html>
