@@ -182,19 +182,21 @@ nav ul li {
 
 .projects-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .projects-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--bottom-margin);
 }
 
 .project-container {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
+  min-height: 20rem;
 }
 
 .project-container p {
