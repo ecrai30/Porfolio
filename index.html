@@ -1,263 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!--Javascript-->
-    <script src="Assets/js/scripts.js"></script>
-    
-    <title>Ezekiel Craig | Software Developer</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav>
-        <h1> Ezekiel Craig</h1>
-        <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
-        <button class="burger-menu" id="burger-menu">
-            <ion-icon  class="bars" name="menu-outline"></ion-icon>
-        </button>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <img 
-        src="Assets/images/Memoji.jpg"
-            alt="Ezekiel Craig"
-            loading="lazy"
-            class="hero-img"
-          >
-
-        <div class="biot animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">I am blue.</p>
-        </div>
-
-    </section>
-
-
-    <!-- More about -->
-    <section class="more-about">
-      This is more about me. 
-    </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-java-144.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-spring-boot-144.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/Mainscreen1.png"
-            alt="Inventory Web Application"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Inventory Web Application</h3>
-          <p class="project-details">
-            This project involves developing a comprehensive inventory management system for Rhythm Forge, a small business. Using Java Spring Boot, the system provides a seamless experience for managing and purchasing equipment.
-          </p>
-          <a href="https://github.com/ecrai30/RhythmForgeInventoryWebApp" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        
-        <div class="project-container project-card">
-          <img
-            src="assets/images/VacayVibe.png"
-            alt="VacayVibe"
-            loading="lazy"
-            class="project-pic"
-          />
-          <br>
-          <h3 class="project-title">Vacation Scheduler</h3>
-          <p class="project-details"> 
-            VacayVibe is a vacation scheduler app that lets users manage vacation and excursion details, including adding, deleting, updating, and sharing plans via email or text, and provides alerts and notifications for start and end times.
-          </p>
-          <a href="https://github.com/ecrai30/VacayVibeMobileApp" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mkgwgwnp" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitterx-192(-xxxhdpi).png"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://www.instagram.com/ezika26/" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://www.linkedin.com/in/ezekiel-craig/" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/ecrai30?tab=repositories" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ezekiel Craig, a Software Developer">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <title>Ezekiel Craig | Software Developer</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Ezekiel Craig</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="toggle-container">
+      <input type="checkbox" id="dark-mode-toggle">
+      <label for="dark-mode-toggle">Dark Mode</label>
     </div>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt="scroll-up"
-      >
-    </i>
-
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2024</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="" target="_blank"
-          >Ezekiel Craig</a
-        >
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="assets/images/hero-image.jpg" alt="Ezekiel Craig" loading="lazy" class="hero-img">
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Hi! I'm Ezekiel. I'm a recent Software Engineering graduate, passionate about using creativity to solve problems. My background is in System Administration, but I now focus on coding.
       </p>
-    </footer>      
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+    </div>
+  </section>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <!-- More about -->
+  <section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Insert more information about yourself here.
+    </p>
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-html-5.svg" alt="HTML5" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/icons8-css3.svg" alt="CSS3" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/icons8-javascript.svg" alt="JavaScript" loading="lazy" class="icon icon-card">
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-java-144.svg" alt="Java" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/icons8-spring-boot-144.svg" alt="Spring Boot" loading="lazy" class="icon icon-card">
+        <img src="assets/icons/icons8-git.svg" alt="Git" loading="lazy" class="icon icon-card">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/images/project1.png" alt="Project 1" loading="lazy" class="project-pic">
+        <h3 class="project-title">Project 1</h3>
+        <p class="project-details">
+          Description of Project 1
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/project2.png" alt="Project 2" loading="lazy" class="project-pic">
+        <h3 class="project-title">Project 2</h3>
+        <p class="project-details">
+          Description of Project 2
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="#" target="_blank"><img src="assets/icons/icons8-twitterx-192(-xxxhdpi).png" alt="Twitter" loading="lazy" class="socicon"></a>
+    <a href="https://www.instagram.com/ezika26/" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
+    <a href="https://www.linkedin.com/in/ezekiel-craig/" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"></a>
+    <a href="https://github.com/ecrai30?tab=repositories" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up">
+    <img src="assets/icons/up-arrow.gif" class="socicon up-arrow" alt="scroll-up">
+  </i>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; Copyright 2024</p>
+    <p>Built with &#x2661; by <a href="" target="_blank">Ezekiel Craig</a></p>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
