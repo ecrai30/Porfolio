@@ -30,10 +30,12 @@
       <li><a href="Assets/SoftwareEngineer.docx" download="Ezekiel_Craig_Resume" class="download=btn">Resume</a>
       </li>
     </ul>
+    <!--
     <div class="toggle-container">
       <input type="checkbox" id="dark-mode-toggle">
       <label for="dark-mode-toggle">Dark Mode</label>
     </div>
+  -->
     <button class="burger-menu" id="burger-menu">
       <ion-icon class="bars" name="menu-outline"></ion-icon>
     </button>
@@ -67,22 +69,40 @@
   </section>
 
 
-  <!-- Skills section -->
-  <section class="skills" id="skills">
-    <h2 class="skill-header">My Top Skills</h2>
-    <div class="skills-wrapper">
-      <div class="first-set animate__animated animate__pulse">
+<!-- Skills section -->
+<section class="skills" id="skills">
+  <h2 class="skill-header">My Top Skills</h2>
+  <div class="skills-wrapper">
+    <div class="skill-set first-set animate__animated animate__pulse">
+      <div class="skill">
         <img src="Assets/icons/icons8-html-5.svg" alt="HTML5" loading="lazy" class="icon icon-card">
-        <img src="Assets/icons/icons8-css3.svg" alt="CSS3" loading="lazy" class="icon icon-card">
-        <img src="Assets/icons/icons8-javascript.svg" alt="JavaScript" loading="lazy" class="icon icon-card">
+        <p class="skill-text">HTML5</p>
       </div>
-      <div class="second-set animate__animated animate__pulse">
-        <img src="Assets/icons/icons8-java-144.svg" alt="Java" loading="lazy" class="icon icon-card">
-        <img src="Assets/icons/icons8-spring-boot-144.svg" alt="Spring Boot" loading="lazy" class="icon icon-card">
-        <img src="Assets/icons/icons8-git.svg" alt="Git" loading="lazy" class="icon icon-card">
+      <div class="skill">
+        <img src="Assets/icons/icons8-css3.svg" alt="CSS3" loading="lazy" class="icon icon-card">
+        <p class="skill-text">CSS3</p>
+      </div>
+      <div class="skill">
+        <img src="Assets/icons/icons8-javascript.svg" alt="JavaScript" loading="lazy" class="icon icon-card">
+        <p class="skill-text">JavaScript</p>
       </div>
     </div>
-  </section>
+    <div class="skill-set second-set animate__animated animate__pulse">
+      <div class="skill">
+        <img src="Assets/icons/icons8-java-144.svg" alt="Java" loading="lazy" class="icon icon-card">
+        <p class="skill-text">Java</p>
+      </div>
+      <div class="skill">
+        <img src="Assets/icons/icons8-spring-boot-144.svg" alt="Spring Boot" loading="lazy" class="icon icon-card">
+        <p class="skill-text">Spring Boot</p>
+      </div>
+      <div class="skill">
+        <img src="Assets/icons/icons8-git.svg" alt="Git" loading="lazy" class="icon icon-card">
+        <p class="skill-text">Git</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Projects section -->
   <section class="projects" id="projects">
