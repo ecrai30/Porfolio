@@ -2,37 +2,20 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
   --primary-color: #4756df;
   --secondary-color: #ff7235;
-  --primary-shadow: #5a099c;
-  --secondary-shadow: #0a33e7;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
-
-/* Dark Mode Styles 
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.toggle-container {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-label {
-  cursor: pointer;
-}
-*/
-
 /* Variables end */
 
 html {
@@ -64,67 +47,64 @@ body {
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
 }
 
-nav h1 {
-  color: var(--primary-color);
+
+nav h1{
+    color:var(--primary-color);
 }
 
 nav a {
-  color: var(--primary-color);
-  transition: var(--transition);
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
-nav a:hover {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+nav a:hover{
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
-nav ul {
-  display: flex;
-  gap: 1.9rem;
+nav ul{
+    display: flex;
+    gap: 1.9rem;
 }
 
 nav ul li {
-  font-weight: var(--bold-font);
+    font-weight: var(--bold-font);
 }
 
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
+.burger-menu{
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
 }
-
 /* Hero Section */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
-  margin: auto;
-  margin-top: 2rem; /* Adjust the padding as needed */
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
 }
 
-.hero img {
+.hero img{
   height: 37.5rem;
   width: 37.5rem;
 }
-
 .bio {
   width: 25rem;
   padding: 0.625rem;
@@ -132,8 +112,9 @@ nav ul li {
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
-.bio h1 {
+.bio h1{
   margin-bottom: var(--bottom-margin);
+
 }
 
 .bio p {
@@ -141,12 +122,13 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
-.more-about {
+.more-about{
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+
 }
 
-.more-about h2 {
+.more-about h2{
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
@@ -156,27 +138,30 @@ nav ul li {
   padding: 0.4rem;
 }
 
-.skills {
+.skills{
   max-width: 68.75rem;
-  margin: auto;
+  margin:auto;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top:2.5rem;
+
 }
 
-.skill header {
+.skill header{
   margin-bottom: 1rem;
 }
 
-.skills-wrapper img {
-  padding: 1.25rem;
+.skills-wrapper img{
+  padding:1.25rem;
+
 }
 
-.icon {
+.icon{
   width: 11.875rem;
   height: 11.25rem;
 }
 
-.icon-card {
+
+.icon-card{
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -272,7 +257,6 @@ nav ul li {
   font-size: 0.875rem;
   outline: none;
 }
-
 .input-field::placeholder {
   padding: 0.5rem;
   color: var(--primary-color);
@@ -328,27 +312,4 @@ footer {
   height: 3rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .hero img {
-    height: auto;
-    width: 100%;
-  }
-  nav li {
-    display: none;
-  }
-  nav ul {
-    overflow: hidden;
-    gap: 1rem;
-  }
-
- 
-  .burger-menu {
-    display: block;
-  }
-}
