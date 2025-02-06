@@ -1,0 +1,23 @@
+Personal brand:  Ezekiel, Ezikia, Ezika 
+
+Colors:
+Primary: Blue
+Secondary: Purple
+Tertiary: Black
+Font: #050433
+Character/Logo: Cat, hooded avatar with  cat on top of head under hoodie. Think Akamaru : with colors
+Hobbies: Playing drums, Gaming - Xbox
+Cartoon Avatar: idk yet
+
+
+
+changes:
+       Line 115: <form action="https://formspree.io/f/mkgwgwnp" method="POST">
+	Line 150:     <p>Built with &#x2661; by <a href="https://www.linkedin.com/in/ezekiel-craig/" target="_blank">Ezekiel Craig</a></p>
+Lines136-139:    
+
+
+ <a href="#" target="_blank"><img src="Assets/icons/icons8-twitterx-192(-xxxhdpi).png" alt="Twitter" loading="lazy" class="socicon"></a>
+    <a href="https://www.instagram.com/ezika26/" target="_blank"><img src="Assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon"></a>
+    <a href="https://www.linkedin.com/in/ezekiel-craig/" target="_blank"><img src="Assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon"></a>
+    <a href="https://github.com/ecrai30?tab=repositories" target="_blank"><img src="Assets/icons/icons8-github.gif" alt="Github" class="socicon"></a>

@@ -21,6 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+ // Adjust scrolling position for navbar links
+ const navbarLinks = document.querySelectorAll("#navbar .nav-link");
+ const offset = 100; // Adjust this value to set the desired offset
+
+ navbarLinks.forEach(link => {
+   link.addEventListener("click", function(event) {
+     event.preventDefault();
+     const targetId = this.getAttribute("href").substring(1);
+     const targetElement = document.getElementById(targetId);
+     const targetPosition = targetElement.offsetTop - offset;
+
+     window.scrollTo({
+       top: targetPosition,
+       behavior: "smooth"
+     });
+   });
+ });
+
   //Nav hamburgerburger selections
   const burger = document.querySelector("#burger-menu");
   const ul = document.querySelector("nav ul");
@@ -33,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Close hamburger menu when a link is clicked
 
 // Select nav links
+
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((link) =>

@@ -131,6 +131,10 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+.bio h1 span{
+  color: var(--primary-color);
+
+}
 /* Hero section ends */
 
 /* More about */
